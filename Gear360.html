@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Youngjae Meen</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" href="img/LOGO.png"> <!-- 파비 넣는 방법-->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style_main_contents.css">
+	<style>
+		.small img{
+			width:80%;
+		}
+
+	</style>
+	<script src="action2.js"></script>
+</head>
+<body>
+	<div id="wrap">
+
+		<div id="goToTop">Top</div>
+		<header id="header">
+			<div id="logo"><a href="HomePage.html"><img src="img/LOGO.png" /></a></div>
+			<input id="toggle" type="checkbox" style="display:none;" />
+			<label for="toggle"><div id="ham"></div></label>
+			<nav>
+				<ul id="navigation">
+					<li class="toc"><a href="HomePage.html">Home</a></li>
+					<li class="toc">
+						<input id="toggle2" type="checkbox" style="display:none;" />
+						<a style="cursor: pointer;"><label for="toggle2">My works &nbsp;▸ </label></a>
+						<div id="submenu">
+							<ul id="sub_navi">
+								<li class="subtoc"><a href="GWD.html">Galaxy Watch Designer</a></li>
+								<li class="subtoc"><a href="GWA2.html">Galaxy Watch Active 2</a></li>
+								<li class="subtoc"><a href="Gear360.html">360 Round Camera</a></li>
+								<li class="subtoc"><a href="TMP.html">Tizen Mobile Phone</a></li>
+								<li class="subtoc"><a href="StrapStudio.html">Starp Studio</a></li>
+								<li class="subtoc"><a href="GreyGoo.html">Grey Goo (Game)</a></li>
+								<li class="subtoc"><a href="RollingPaint.html">Rolling Paint (Game)</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="toc"><a href="About.html">About</a></li>
+					<li class="toc"><a href="Contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div id="main_contents">
+			<div class="contents_wrap">
+				<h1>Introduce</h1>
+				<img src="img/360 Round/intro.png" />
+				<p>
+					Apr.2017 ~ Dec.2017 (<a href="https://www.samsung.com/us/business/products/mobile/virtual-reality/360-round/360-round-sm-r260nzkaxar/">360 Round VR Camera</a>)<br />
+				</p><br />
+				<p>
+					<b>PLATFORM: </b> Windows, RT OS
+				</p><br />
+				<p>
+					<b>Description</b><br /><br />
+					360 Round is a High-End 360 camera for professional photographers. It can produce 4K 3D 360 images using 17 lenses and supports 4K 3D 360 Live broadcasting, which is expected to be used in broadcasting stations and professional shooting studios. In this project, I worked as UX and PUI designer for camera operation, Controller S/W UX for supporting camera control and live broadcasting, and Viewer S/W UX for video viewing and conversion file.
+					<br />
+				</p><br />
+				<p><b>Role:</b> PUI, UX-UI (Camera, PC S/W), Research </p>
+				<br />
+			</div>
+			<div class="contents_wrap">
+				<h1>Project Goals</h1>
+				<img src="img/360 Round/ProjectGoals.png" />
+				<p>As a professional 360 camera, 360 Round has been projected with the goal of enhancing the field usage, supporting live broadcasting, and providing easy and intuitive UX.</p>
+				<br />
+			</div>
+			<div class="contents_wrap">
+				<h1>Expected Key use cases</h1>
+				<img src="img/360 Round/ExpectedUseCase.png" />
+				<p>It was necessary to predict the key use cases before the UX design proceeded. Given the price and performance of the camera, the 360 ​​Round model was expected to be mainly sold as B2B. Especially, it can be used for broadcast, performance/live broadcast, news report, real-time introduction of tourist spot in broadcasting station, professional studio, and local government.	</p>
+				<br />
+			</div>
+			<div class="contents_wrap">
+				<h1>UX design progress</h1><br />
+				<h2>Research - Competitor bench mark</h2><br/>
+				<div id="type2_wrap">
+					<div id="first_1">
+						<h3>Nokia OZO</h3>
+						<img src="img/360 Round/Ozo.png" /><br />
+						<p>
+							Nokia OZO has a similar positioning in the most points with 360 Round, and the process of broadcasting and recording is similar, so I decided to benchmark it.
+							Although I refer to the industry standard such as interactions for main functions from the OZO, I have also differentiated the design in terms of functional classification based on look and feel and task execution.
+						</p><br />
+					</div>
+					<div id="second_2">
+						<h3>IM360</h3>
+						<img src="img/360 Round/IM360.png" /><br />
+						<p>This program was used by a video company I interviewed. It was referenced in UI and icon design work. Especially, I learned a lot from the point that increasing the visibility with the use of the big icon and the design direction that focused on the main task.</p><br />
+					</div>
+					<div id="third_3">
+						<h3>Vahana VR</h3>
+						<img src="img/360 Round/Vahana.png" /><br />
+						<p>This program is supporting live stitching and live broadcasting. With this program, I was able to take a closer look at live broadcasting.</p><br />
+					</div>
+				</div>
+				<div class="small">
+					<h2>Research - Expert interview & Field test</h2><br />
+					<h3>VEE Korea - VR contents creator</h3>
+					<img src="img/360 Round/VEE.png" />
+					<h3>Sanghwa VR - 3D, VR, Robot</h3>
+					<img src="img/360 Round/Sanghwa.png" />
+					<h3>Everland - Amusement Park</h3>
+					<img src="img/360 Round/Everland.png" />
+				</div>
+				<p id="bottom_line">&nbsp;</p>
+				<br />
+			</div>
+			<div class="contents_wrap small">
+				<h1>UX concept</h1>
+				<img src="img/360 Round/360Round_PUI.png"/><br/>
+				<b>360 Round UX and PUI</b>
+				<p>
+					Main features: (Standalone) Recording, Camera detail manipulation. <br /><br />
+					Optimized UX for small LCD. Moving and selecting the menu with 4 direction keys and simplifying the structure allows users to intuitively access main functions. IA structure is optimized so that all operations can be performed with 4 direction keys considering stand alone use situation.
+				</p>
+				<br />
+				<img src="img/360 Round/360Round_Controller.png" /><br />
+				<b>360 Round controller PC S/W</b>
+				<p>
+					Main features: Recording, Live broadcasting, Camera detail manipulation. <br/><br/>
+					The main requirement of the 360 ​​Round controller was to enhance on-site usability. Considering the characteristics of the shooting site, I have used a large and simple icon and improved accessibility to frequently used functions in the field. Since the same functional groups are grouped and placed on the screen, users can easily predict and naturally access those functions.
+				</p>
+				<br />
+				<img src="img/360 Round/360Round_Viewer.png" /><br />
+				<b>360 Round viewer PC S/W</b>
+				<p>
+					Main features: Viewing, Convert Raw file to MP4, Trim <br/><br/>
+					Viewer program that was included to existing controller has been separated as an independent program. It is designed as an editor after shooting, considering the
+					working environment in the indoor rather than the outdoor shooting conditions.  Viewer program helps to simple video editing and convert Raw file to MP4 format.
+				</p>
+				<br />
+			</div>
+			<div class="contents_wrap">
+				<h1>UX design progress</h1>
+				<img src="img/360 Round/image 30.png" />
+				<p>
+					Understanding the user characteristics and brain storming process led to a basic design idea. Based on this, the wire framing and information architecture are organized and the UX design is confirmed through the iteration process.
+				</p>
+				<br />
+				<img src="img/360 Round/image 31.png" />
+				<p>
+					Based on those works, 360 Round prototype was implemented. I conduct closed beta test to collect actual user feedback by verifying usability in field. With this test result and iteration process, 360 Round was able to achieve final commercialization.
+				</p>
+				<br />				
+			</div>
+		</div>
+
+		<div id="background" style="background-image:url(img/BG_thumbnails/Gear360_1.png);background-repeat:no-repeat;background-size:cover;background-color:black;">
+			<p id="HeadTitle" style="background:black;opacity:0.7;text-shadow: 5px 5px 2px black;">360 Round</p>
+			<p id="HeadSubTitle" style="background:black;opacity:0.7;text-shadow: 5px 5px 2px black;">High Quality 360 Camera for Professional Users</p>
+		</div>
+	</div>
+</body>
+</html>

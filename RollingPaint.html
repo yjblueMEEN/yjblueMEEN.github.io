@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Youngjae Meen</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" href="img/LOGO.png"> <!-- 파비 넣는 방법-->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style_main_contents.css">
+	<script src="action.js"></script>
+</head>
+<body>
+	<div id="wrap">
+
+		<div id="goToTop">Top</div>
+		<header id="header">
+			<div id="logo"><a href="HomePage.html"><img src="img/LOGO.png" /></a></div>
+			<input id="toggle" type="checkbox" style="display:none;" />
+			<label for="toggle"><div id="ham"></div></label>
+			<nav>
+				<ul id="navigation">
+					<li class="toc"><a href="HomePage.html">Home</a></li>
+					<li class="toc">
+						<input id="toggle2" type="checkbox" style="display:none;" />
+						<a style="cursor: pointer;"><label for="toggle2">My works &nbsp;▸ </label></a>
+						<div id="submenu">
+							<ul id="sub_navi">
+								<li class="subtoc"><a href="GWD.html">Galaxy Watch Designer</a></li>
+								<li class="subtoc"><a href="GWA2.html">Galaxy Watch Active 2</a></li>
+								<li class="subtoc"><a href="Gear360.html">360 Round Camera</a></li>
+								<li class="subtoc"><a href="TMP.html">Tizen Mobile Phone</a></li>
+								<li class="subtoc"><a href="StrapStudio.html">Starp Studio</a></li>
+								<li class="subtoc"><a href="GreyGoo.html">Grey Goo (Game)</a></li>
+								<li class="subtoc"><a href="RollingPaint.html">Rolling Paint (Game)</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="toc"><a href="About.html">About</a></li>
+					<li class="toc"><a href="Contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div id="main_contents">
+			<div class="contents_wrap">
+				<h1>Introduce</h1>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/kFsjCA0_Ilg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<p>Feb.2017 ~ Apr.2017 <br /></p><br />
+				<p>
+					<b>Description</b><br /><br />
+					This is my fist Unity 3D game project after studying. This is a game that draws patterns on a rotating disc. User can design various patterns by applying the rotation of the disc. It provides an intuitive interface in the game view, so that various effects can be created easily.
+					<br />
+				</p><br />
+				<p><b>Role:</b> Planning, Game Design, Game Develop, UX-UI&GUI, Branding, Promotion </p>
+				<br />
+			</div>
+			<div class="contents_wrap">
+				<h1>Background</h1>
+				<img src="img/Rolling/circle_art.png" />
+				<p>
+					This game was inspired by the work of “Dance of the Circle” by Mikhail SADOVNIKOV from Russia. After watching this work for the first time in 2013, I have been thinking about how to actually implement it in digital. I saw the possibility of implementing this work through the Unity 3D program and started the project in earnest.
+				</p><br />
+			</div>
+			<div class="contents_wrap">
+				<h1>Game Design 1</h1>
+				<h2>Wire frame</h2>
+				<img src="img/Rolling/Wireframe.png" />
+				<p>
+					The most accomplished part of designing this game was how to draw a picture on a rotating circle. In the actual physical world, it is a natural move without big trouble, but in game condition, it is necessary to analyze the basic principle how a pen works. So I thought about the action of the pen and found that pen ink works as part of the paper as soon as it is placed on the paper. I applied this finding and developed it so that objects are created at the pointing position in the game, and than the objects rotate together as part of the rotating paper. In-game interaction is optimized for the touch in consideration of the mobile environment. Also, UI is configured to change major settings during game.
+				</p><br />
+			</div>
+			<div class="contents_wrap">
+				<h1>Game Design 2</h1>
+				<h2>Interface</h2>
+				<img src="img/Rolling/interface.png" />
+				<p></p><br/>
+			</div>
+			<div class="contents_wrap">
+				<h1>Game Develop & Distribute </h1>
+				<img src="img/Rolling/Dev_Test.png" />
+				<img src="img/Rolling/Distribute.png" />
+				<p>
+					<b>Download: </b><a href="https://play.google.com/store/apps/details?id=com.yjblue.rolling_paint"> https://play.google.com/store/apps/details?id=com.yjblue.rolling_paint </a>
+				</p>
+				<p>
+					<b>Youtube: </b><a href="https://www.youtube.com/watch?v=kFsjCA0_Ilg&feature=youtu.be"> https://www.youtube.com/watch?v=kFsjCA0_Ilg&feature=youtu.be </a>
+				</p>
+				<p>
+					Game is created by Unity 3D. Based on the game design, the behavior of each element is defined. I have placed a slider and a button UI that users can intuitively control, and connected them to control each element's behavior. In order to verify the usability of the actual device, a public test was conducted through the device test and closed beta, and after the iteration process, the game was distributed to Google play.
+				</p><br/>
+			</div>
+		</div>
+
+		<div id="background" style="background-image:url(img/BG_thumbnails/RollingPaint_1.png);background-repeat:no-repeat;background-size:cover;background-color:black;">
+			<p id="HeadTitle" style="background:black;opacity:0.7;text-shadow: 5px 5px 2px black;">Rolling Paint</p>
+			<p id="HeadSubTitle" style="background:black;opacity:0.7;text-shadow: 5px 5px 2px black;">Draw pattern on the rolling Disk</p>
+		</div>
+	</div>
+</body>
+</html>

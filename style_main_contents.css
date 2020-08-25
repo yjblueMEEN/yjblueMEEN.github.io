@@ -1,0 +1,358 @@
+﻿.contents_wrap > * {
+    width: 100%;
+}
+
+    .contents_wrap > * > * {
+        width: 100%;
+    }
+
+.contents_wrap {
+    margin: 10px 20px;
+}
+
+.contents_wrap > * {
+    margin-top: 10px;
+}
+
+
+
+h1 {
+    color: darkblue;
+}
+
+h1:first-child{
+    margin-top:30px;
+}
+
+h1 > span {
+    font-size: 20px;
+}
+
+h2 {
+    margin:3px;
+}
+
+.contents_wrap img {
+    margin-bottom: 5px;
+    padding: 5px;   
+}
+
+.contents_wrap > p:nth-last-child(2) {
+    border-bottom: 1px dotted black;
+    padding-bottom: 30px;
+}
+
+.contents_wrap > ul > li {
+    list-style: square inside none;
+}
+
+.left_half > img {
+    width: 100%;
+}
+
+.right_half > img {
+    width: 100%;
+}
+
+.bullet > li {
+    list-style: disc;
+}
+
+/* 그레이구 스타일 */
+@media screen and (min-width:1000px) {
+    .div2 > div:nth-child(2n+1) {
+        width: 45%;
+        float: left;
+    }
+
+    .div2 > div:nth-child(2n) {
+        width: 45%;
+        float: right;
+    }
+
+    .div2 {
+        height: 330px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .div2 img{
+        width:100%;
+    }
+}
+
+@media screen and (max-width:500px) {
+}
+
+/* 3단 구성 위한 스타일 */
+
+#type2_wrap img {
+    width: 100%;
+}
+
+@media screen and (min-width:700px) {
+    #type2_wrap {
+        position: relative;
+    }
+
+        #type2_wrap > div {
+            margin-left: 3%;
+        }
+
+    #first_1 {
+        width: 30%;
+        float: left;
+    }
+
+    #second_2 {
+        width: 30%;
+        float: left;
+    }
+
+    #third_3 {
+        width: 30%;
+        float: left;
+    }
+}
+
+@media screen and (max-width:700px) and (min-width:400px) {
+    #type2_wrap {
+        position: relative;
+    }
+
+        #type2_wrap > div {
+            width: 100%;
+            float: left;
+        }
+
+            #type2_wrap > div > img {
+                width: 30%;
+                float: left;
+            }
+
+            #type2_wrap > div > p {
+                width: 60%;
+                float: right;
+            }
+}
+
+/* 2단 구성 위한 코드 _ GWD */
+#type1_wrap img {
+    width: 100%;
+}
+
+@media screen and (min-width:500px) {
+    #type1_wrap {
+        position: relative;
+    }
+
+    #right_h {
+        width: 45%;
+        float: right;
+    }
+
+    #left_h {
+        width: 45%;
+        float: left;
+    }
+}
+
+/* 2단 구성 위한 코드 _ GWD2*/
+#type15_wrap img {
+    width: 100%;
+}
+
+@media screen and (min-width:500px) {    
+    #type15_wrap {
+        position: relative;
+    }
+
+    #right_h15 {
+        width: 45%;
+        float: right;
+    }
+
+    #left_h15 {
+        width: 45%;
+        float: left;
+    }
+}
+
+
+/* 2단 구성 + 옆에 스크롤 위한 코드 */
+@media screen and (min-width:500px) {
+    #type3_wrap
+
+{
+    position: relative;
+}
+
+#type3_img {
+    width: 40%;
+    float: left;
+}
+
+#type3_explain {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+    #type3_explain > p {
+        position: relative;
+        overflow: scroll;
+        border-bottom: 1px solid gray;
+    }
+
+        #type3_explain > p::-webkit-scrollbar {
+            width: 5px;
+            height: 0;
+            background-color: gray;
+        }
+
+        #type3_explain > p::-webkit-scrollbar-thumb {
+            width: 3px;
+            border-radius: 5px;
+            background-color: black;
+        }
+
+        #type3_explain > p:first-child {
+            margin-top: 0%;
+            height: 20%;
+        }
+
+        #type3_explain > p:nth-child(2) {
+            margin-top: 5%;
+            height: 40%;
+        }
+
+        #type3_explain > p:nth-child(3) {
+            margin-top: 5%;
+            height: 20%;
+        }
+
+        #type3_explain > p:last-child {
+            margin-top: 5%;
+            height: 10%;
+        }
+
+}
+
+@media screen and (max-width:500px) {
+    #type3_wrap {
+        position: relative;
+    }
+
+    #type3_img {
+        width: 70%;
+    }
+
+    #type3_explain > p {
+        border-bottom: 1px solid gray;
+    }
+
+        #type3_explain > p:first-child {
+            margin-top: 0%;
+            height: 20%;
+        }
+
+        #type3_explain > p:nth-child(2) {
+            margin-top: 5%;
+            height: 40%;
+        }
+
+        #type3_explain > p:nth-child(3) {
+            margin-top: 5%;
+            height: 20%;
+        }
+
+        #type3_explain > p:last-child {
+            margin-top: 5%;
+            height: 10%;
+        }
+}
+
+/*Grey Goo style*/
+.contents_wrap li {
+    list-style: decimal inside none;
+}
+
+.contents_wrap > div > div::-webkit-scrollbar {
+    width: 5px;
+    height: 0;
+    background-color: gray;
+}
+
+.contents_wrap > div > div::-webkit-scrollbar-thumb {
+    width: 3px;
+    border-radius: 5px;
+    background-color: black;
+}
+
+@media screen and (min-width:500px) {
+    /* Type 4*/
+    #type4_img {
+        width: 20%;
+        float: left;
+    }
+
+    #type4_explain {
+        width: 70%;
+        float: right;
+        overflow: scroll;
+        border-bottom: 1px solid gray;
+    }
+
+
+    /* Type 5*/
+    #type5_img {
+        width: 20%;
+        float: right;
+    }
+
+    #type5_explain {
+        width: 70%;
+        float: left;
+        overflow: scroll;
+        border-bottom: 1px solid gray;
+    }
+
+    
+}
+
+@media screen and (max-width:500px) {
+    /* Type 4*/
+    #type4_wrap {
+        font-size: 12px;
+    }
+
+    #type4_img {
+        width: 30%;
+        float: left;
+    }
+
+    #type4_explain {
+        width: 65%;
+        float: right;
+        overflow: scroll;
+        border-bottom: 1px solid gray;
+    }
+
+    /* Type 5*/
+    #type5_wrap {
+        font-size: 12px;
+    }
+
+    #type5_img {
+        width: 30%;
+        float: right;
+    }
+
+    #type5_explain {
+        width: 65%;
+        float: left;
+        overflow: scroll;
+        border-bottom: 1px solid gray;
+    }
+}

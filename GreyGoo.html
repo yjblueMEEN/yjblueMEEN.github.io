@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Youngjae Meen</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" href="img/LOGO.png"> <!-- 파비 넣는 방법-->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style_main_contents.css">
+	<style>
+        .contents_wrap li {
+            list-style: decimal outside none;
+        }
+	</style>
+	<script src="action4.js"></script>
+</head>
+<body>
+	<div id="wrap">
+		<div id="goToTop">Top</div>
+		<header id="header">
+			<div id="logo"><a href="HomePage.html"><img src="img/LOGO.png" /></a></div>
+			<input id="toggle" type="checkbox" style="display:none;" />
+			<label for="toggle"><div id="ham"></div></label>
+			<nav>
+				<ul id="navigation">
+					<li class="toc"><a href="HomePage.html">Home</a></li>
+					<li class="toc">
+						<input id="toggle2" type="checkbox" style="display:none;" />
+						<a style="cursor: pointer;"><label for="toggle2">My works &nbsp;▸ </label></a>
+						<div id="submenu">
+							<ul id="sub_navi">
+								<li class="subtoc"><a href="GWD.html">Galaxy Watch Designer</a></li>
+								<li class="subtoc"><a href="GWA2.html">Galaxy Watch Active 2</a></li>
+								<li class="subtoc"><a href="Gear360.html">360 Round Camera</a></li>
+								<li class="subtoc"><a href="TMP.html">Tizen Mobile Phone</a></li>
+								<li class="subtoc"><a href="StrapStudio.html">Starp Studio</a></li>
+								<li class="subtoc"><a href="GreyGoo.html">Grey Goo (Game)</a></li>
+								<li class="subtoc"><a href="RollingPaint.html">Rolling Paint (Game)</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="toc"><a href="About.html">About</a></li>
+					<li class="toc"><a href="Contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div id="main_contents">
+			<div class="contents_wrap">
+				<h1>Introduce</h1>
+				<iframe width="617" height="422" src="https://www.youtube.com/embed/sf-votK9SIs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<p>Apr.2017 ~ Jun.2017 <br /></p><br />
+				<p>
+					<b>Description</b><br /><br />
+					3D Shooting game created by Unity 3D. The game begins in Gray Goo, which has been infiltrated from outer space and parasitized into the sun. Gray Goo, an infinitely proliferating Cube, expands its territory and eventually threatens the Earth's orbit. The goal of this game is to destroy all of them with the Omega fighter – a space ship. This project was my personal project and I was in charge of Planning, Design, Develop, Test & Distribute. It was a great opportunity for me to experience the series of experiences that I have experienced in the project everyday in the software industry, and I was able to broaden my perspective to the outside of the UX design work.
+					<br />
+				</p><br />
+				<p><b>Role:</b> Planning, Game Design, Game Develop, UX-UI&GUI, Branding, Promotion </p>
+				<br />
+			</div>
+			<div class="contents_wrap">
+				<h1>Background</h1>
+				<img src="img/GrayGoo/GreyGoo_Background.png" />
+				<p>
+					Personally, I am interested in science, astrophysics, and SF scenarios. As I was studying Unity 3D, I used the physical system of the Unity engine to enjoy various virtual experiments. Gray Goo is one of the dooms day scenarios proposed by Eric Drexler, in which a small nano-machine propagates infinitely, creating its own replicators, and eventually covering the surface of the planet, destroying humankind. This project started from trying to implement this situation in the game.<br />
+					Initially I aimed to simply implement Gray Goo. Itself. I succeeded in making a cube that multiplies infinitely, and then based on this, I made a game by adding a Game scenario. The Gray Goo scenario is a dooms day scenario, and I also have planned a scenario that the world destructed by Gray Goo. And in this game, gamers will fighting to prevent it.
+				</p><br />
+			</div>
+			<div class="contents_wrap">
+				<h1>Game Design 1</h1>
+				<div class="div2">
+					<div>
+						<img src="img/GrayGoo/start.png" /><br />
+						<p><b>Start</b><br />The Grey Goo seed that invaded from outer space begins to paralyze the sun. Grey Goo soon created his own replicas and widen their territory.</p>
+					</div>
+					<div>
+						<img src="img/GrayGoo/HowItWorks.png" /><br />
+						<p><b>How Grey Goo works</b><br />Grey Goo can grow in all directions. At a random time, it will multiply in a random direction.</p>
+					</div>
+				</div>
+				<div class="div2">
+					<div>
+						<img src="img/GrayGoo/FailScenario.png" /><br />
+						<p><b>Fail scenario</b><br />When Grey Goo widens the area and invades the Earth's orbit, it collides with the Earth. This destroys the Earth, and Gamer is defeated because he/she can not stop the destruction of the world</p>
+					</div>
+					<div>
+						<img src="img/GrayGoo/WinScenario.png" /><br />
+						<p><b>Win scenario</b><br />If Gamer destroys all Grey Goo before destroying the Earth, Gamer successfully complete the mission.</p>
+					</div>
+				</div><br />
+				<p>&nbsp;</p>
+				<br />
+			</div>
+			<div class="contents_wrap">
+				<h1>Game Design 2</h1>
+				<h2>Characters</h2>
+				<div id="type4_wrap">
+					<img id="type4_img" src="img/GrayGoo/OmegaF.png" />
+					<div id="type4_explain">                
+					   <ol>
+						   <b>Behavior</b><br/><br />
+						   <li>Can move up and down, left and right around Grey goo (Touch interaction)</li><br/>
+						   <li>User is able to observe Grey Goo in View of Pilot. The perspective changes each time it moves. The effect of tilting the plane in the direction of movement when moving is also applied</li><br />
+						   <li>There are two types of weapons: Bullet and Missile. Designed to move forward, disappearing beyond a certain range<br /><br/>
+								- Bullet : Tiny and Fast. Shooting available any time. A Bullet will destroy a Cube at once.<br/><br/>
+								- Missile : Big and slow moving. Destroy every cube in the its pathway. Unable to shoot it until it’s disappeared.
+						   </li>
+					   </ol>            
+					 </div>          
+				 </div><br/>
+				<div id="type5_wrap">
+					<img id="type5_img" src="img/GrayGoo/Earth.png" />
+					<div id="type5_explain">                                    
+						<ol>
+							<b>Behavior</b><br /><br />
+							<li>Orbital motion around the sun, but the height of the orbit changes slightly</li><br/>
+							<li>Moving with Mars and Jupiter, destroying the moment of contact with the Cube</li><br/>
+							<li>Therefore, the user must destroy all of the cube before Earth touches the cube.</li>
+						</ol>                
+					</div>
+				</div><br />
+				<p>
+					The most accomplished part of creating this game was the Gray Goo character design. At what speed, in what direction to multiply,
+					in what conditions it needed a detailed definition of what to stop the proliferation and destroy under what conditions.
+					This is directly related to Game difficulty, so the game's difficulty has changed a lot due to the slight differences.
+					Gamer has been able to enjoy the game at the pilot point by linking Camera to Space Ship.
+					I focused on adjusting the game speed to adjust the launch speed of the bullet and missile and making the feel of hitting the Gray Goo with a weapon.
+					The Earth is a character that gamer must protect, designed to revolve around the sun.
+					However, in order to give unexpectedness of the game, the height of the rotating orbit is designed to change randomly.
+				</p>
+				<br />
+			</div>
+			<div class="contents_wrap">
+					<h1>Game Design 3</h1>
+					<h2>Information Architecture</h2>
+					<img src="img/GrayGoo/InformationArchitecture.png" />
+					<p></p><br />
+			</div>
+			<div class="contents_wrap">
+					<h1>Game Develop & Distribute</h1>					
+					<img src="img/GrayGoo/DevelopDistribute_1.png" />
+					<img src="img/GrayGoo/DevelopDistribute_2.png" />
+					<p>
+						<b>Download: </b><a href="https://play.google.com/store/apps/details?id=com.Company.GreyGooShooting"> https://play.google.com/store/apps/details?id=com.Company.GreyGooShooting </a>
+					</p>
+					<p>
+						<b>Youtube: </b><a href="https://www.youtube.com/watch?v=sf-votK9SIs&t=1s"> https://www.youtube.com/watch?v=sf-votK9SIs&t=1s </a>
+					</p>
+					<p>
+						I started to make games according to Game Design. With Unity 3D, I made a whole screen layout, and designed characters.
+						For Omega fighters, Gamer's avatar, I made 3D object using Paint 3D.
+						I have defined a code based action so that each character can operate as intended. I derive the optimum value through several iteration, and based on this, the game is completed.
+						Finally, I checked the actual device to see if it worked as intended through the test.<br/>
+						As last step, I published this game. I choose Android platform to run this game since this platform is most common in Korea and people around me can easily access. Also I made and upload movie clip to promote this game.
+					</p><br />
+			</div>
+		</div>
+
+		<div id="background" style="background-image:url(img/BG_thumbnails/GreyGoo_1.png);background-repeat:no-repeat;background-size:cover;background-color:black;">
+			<p id="HeadTitle" style="background:black;opacity:0.7;text-shadow: 5px 5px 2px black;">Grey Goo Invasion</p>
+			<p id="HeadSubTitle" style="background:black;opacity:0.7;text-shadow: 5px 5px 2px black;">Save the Earth!!! - Defense Game made by Unity 3D</p>
+		</div>
+	</div>
+</body>
+</html>
+<

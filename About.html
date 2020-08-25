@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Youngjae Meen</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" href="img/LOGO.png"> <!-- 파비 넣는 방법-->
+	<link rel="stylesheet" href="style.css">
+	<script src="action.js"></script>
+	<style>
+        @media screen and (min-width:1000px) {
+            #contents {
+                width: 70%;
+                margin: 0 auto;
+                background: #FFFFFF;
+                padding: 10px;
+                font-size: 20px;
+            }
+
+            span > img {
+                width: 300px; height: 400px;
+            }
+        }
+
+        @media screen and (max-width:1000px) and (min-width:500px){
+            #contents {
+                width: 80%;
+                margin: 0 auto;
+                background: #FFFFFF;
+                padding: 10px;
+                font-size: 20px;
+            }
+
+            span > img {
+                width: 270px;
+                height: 360px;
+            }
+        }
+
+        @media screen and (max-width:500px) {
+            #contents {
+                width: 90%;
+                margin: 0 auto;
+                background: #FFFFFF;
+                padding: 10px;
+                font-size: 20px;
+            }
+        }
+
+		span {
+			display:block;
+			margin:10px;
+			line-height:1.5;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="wrap">
+
+		<div id="goToTop">Top</div>
+		<header id="header">
+			<div id="logo"><a href="HomePage.html"><img src="img/LOGO.png" /></a></div>
+			<input id="toggle" type="checkbox" style="display:none;" />
+			<label for="toggle"><div id="ham"></div></label>
+			<nav>
+				<ul id="navigation">
+					<li class="toc"><a href="HomePage.html">Home</a></li>
+					<li class="toc">
+						<input id="toggle2" type="checkbox" style="display:none;" />
+						<a style="cursor: pointer;"><label for="toggle2">My works &nbsp;▸ </label></a>
+						<div id="submenu">
+							<ul id="sub_navi">
+								<li class="subtoc"><a href="GWD.html">Galaxy Watch Designer</a></li>
+								<li class="subtoc"><a href="GWA2.html">Galaxy Watch Active 2</a></li>
+								<li class="subtoc"><a href="Gear360.html">360 Round Camera</a></li>
+								<li class="subtoc"><a href="TMP.html">Tizen Mobile Phone</a></li>
+								<li class="subtoc"><a href="StrapStudio.html">Starp Studio</a></li>
+								<li class="subtoc"><a href="GreyGoo.html">Grey Goo (Game)</a></li>
+								<li class="subtoc"><a href="RollingPaint.html">Rolling Paint (Game)</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="toc"><a href="About.html">About</a></li>
+					<li class="toc"><a href="Contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div id="main_contents">
+			<p style="margin:10px;text-align:center;">
+				<span>
+					<img src="img/MySelf.png">
+				</span>
+			</p>
+
+			<p id="contents">
+				<span>
+					For 11 years since I started my carrier in Samsung Electronics,
+					I have been accumulated various knowledge about UX design practice as I have been working in the Mobile UX field.
+					I am proud to have experienced all aspects of mobile UX related from both the feature phone and the smartphone to wearable UX,
+					and I think I have accomplished many achievements that help the company.
+				</span><br />
+				<span>
+					Especially, I feel proud to have helped strengthen the 3rd party ECO of the Samsung Galaxy Watch series by launching a
+					PC/MAC program called Galaxy Watch Designer. I initiated this program in 2016 by myself.
+				</span><br />
+				<span>
+					I have not only been in the mobile app UX but also experienced the OS platform UX and planning work which is difficult to experience
+					in Korea while performing Tizen and bada OS platform UX tasks. That was a great opportunity to develop the ability to see the UX as well
+					as the industry-wide situation from a broad perspective.
+				</span><br />
+				<span>
+					Also, I have been dispatched to India as an on-site specialist for about 8month to set up local UX work and to conduct UX knowledge
+					transferring. Through this experience, I learned how to adapt and interact with foreign cultures, and how to perform new tasks and achieve
+					results that have not existed.
+				</span><br />
+				<span>
+					As a graduate of engineering school, I am able to understand and adopt technology quickly, and there is much interest
+					in the new technology field. I am also interested in Unity 3D, Java, and HTML5 programming, and recently started to study python
+					programming for data engineering.
+				</span><br />
+				<span>
+					I'm a nice team player that it's very familiar to adapt to the new environment and always used to collaborate with teams.
+					Also, I am a person who is outgoing, loves sports - my hobby is basketball, mountain climbing.
+				</span><br />
+			</p>
+
+		</div>
+		<div id="background">
+			<div id="back_image">
+				<p id="HeadTitle" style="text-shadow: 2px 2px 2px gray;">YOUNGJAE MEEN</p>
+				<p id="HeadSubTitle" style="text-shadow: 2px 2px 2px gray;">Senior UX/UI designer, Design product, Service, ECO, and UX communication</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
