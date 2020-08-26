@@ -14,8 +14,6 @@
     margin-top: 10px;
 }
 
-
-
 h1 {
     color: darkblue;
 }
@@ -56,6 +54,13 @@ h2 {
 
 .bullet > li {
     list-style: disc;
+}
+
+/* 1000px 기준으로 이미지 전체 좀 줄이고, 가운데 정렬 시키자.*/
+@media screen and (min-width:1000px) {
+    .contents_wrap img {
+        width: 80%;
+    }
 }
 
 /* 그레이구 스타일 */
