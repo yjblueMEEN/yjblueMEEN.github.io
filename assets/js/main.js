@@ -5,6 +5,20 @@
   const menuToggle = document.querySelector(".menu-toggle");
   const progress = document.querySelector(".scroll-progress");
   const langButtons = [...document.querySelectorAll("[data-set-lang]")];
+  const localFile = root.dataset.localFile === "true";
+
+  // File URLs may not share localStorage between pages, so carry the choice
+  // through local document links without changing the published site URLs.
+  const setFileLinkLanguage = (language) => {
+    if (!localFile) return;
+    document.querySelectorAll("a[href]").forEach((link) => {
+      const href = link.getAttribute("href");
+      if (!/^[a-z0-9-]+\.html(?:[?#]|$)/i.test(href || "")) return;
+      const url = new URL(link.href);
+      url.searchParams.set("lang", language);
+      link.setAttribute("href", href.split(/[?#]/)[0] + url.search + url.hash);
+    });
+  };
 
   const getLanguage = () => root.dataset.lang === "ko" ? "ko" : "en";
 
@@ -50,6 +64,11 @@
     const next = language === "ko" ? "ko" : "en";
     root.lang = next;
     root.dataset.lang = next;
+    document.querySelectorAll(".lang-ko, .lang-en").forEach((element) => {
+      const active = element.classList.contains(`lang-${next}`);
+      element.setAttribute("aria-hidden", String(!active));
+      if ("inert" in element) element.inert = !active;
+    });
 
     langButtons.forEach((button) => {
       const selected = button.dataset.setLang === next;
@@ -69,8 +88,20 @@
     });
 
     updateAccessibilityLabels();
+    setFileLinkLanguage(next);
 
-    if (persist) writeStoredLanguage(next);
+    if (persist) {
+      writeStoredLanguage(next);
+      if (localFile) {
+        const url = new URL(location.href);
+        url.searchParams.set("lang", next);
+        try {
+          history.replaceState(null, "", url.href);
+        } catch (_) {
+          // Other local documents still receive the language through their links.
+        }
+      }
+    }
     document.dispatchEvent(new CustomEvent("portfolio:language", { detail: { language: next } }));
   };
 
@@ -165,7 +196,7 @@
         block: "start"
       });
       history.replaceState(null, "", id);
-      if (link.classList.contains("skip-link")) target.focus({ preventScroll: true });
+      if (target.matches("[tabindex], a[href]")) target.focus({ preventScroll: true });
     });
   });
 })();
