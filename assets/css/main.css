@@ -1641,7 +1641,7 @@ main {
   color: var(--cobalt-dark);
   font-size: 0.78rem;
   font-weight: 850;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.025em;
 }
 
 .timeline-role {
@@ -2007,7 +2007,7 @@ main {
   }
 
   .timeline-item {
-    grid-template-columns: 8rem minmax(0, 0.4fr) minmax(0, 0.6fr);
+    grid-template-columns: 10rem minmax(0, 0.4fr) minmax(0, 0.6fr);
   }
 }
 
@@ -2321,19 +2321,25 @@ body {
 
 html[data-lang="ko"] body {
   letter-spacing: -0.012em;
-}
-
-html[data-lang="ko"] :is(h1, h2, h3, p, li, dt, dd, strong, small, span) {
   word-break: keep-all;
   overflow-wrap: break-word;
 }
 
-:is(h1, h2, h3, .display-title, .page-title, .case-title, .section-title, .project-title) {
+:is(h1, h2, h3, .display-title, .page-title, .case-title, .section-title, .project-title, .footer-title) {
   text-wrap: balance;
+  overflow-wrap: break-word;
+  hyphens: none;
 }
 
-:is(p, li, .section-lede, .hero-copy, .case-intro, .project-summary) {
+:is(p, li, figcaption, .section-lede, .hero-copy, .case-intro, .project-summary, .timeline-copy) {
   text-wrap: pretty;
+  overflow-wrap: break-word;
+}
+
+/* Let the surrounding sentence wrap, but keep a date range on one line. */
+.date-range {
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
 }
 
 .shell {
@@ -3638,7 +3644,6 @@ html[data-lang="ko"] :is(
   .project-index,
   .case-side-title .number,
   .visual-work-status,
-  .timeline-year,
   .principle-number
 ) {
   letter-spacing: 0.065em;
@@ -4330,23 +4335,6 @@ html[data-lang="en"] .case-side-title h2 {
 }
 
 /* V2 — portfolio-wide editorial and visual polish */
-
-:where(h1, h2, .page-title, .case-title, .section-title, .project-title, .footer-title) {
-  text-wrap: balance;
-  word-break: keep-all;
-  overflow-wrap: normal;
-  hyphens: none;
-}
-
-:where(p, li, figcaption, .section-lede, .project-summary, .timeline-copy) {
-  text-wrap: pretty;
-}
-
-html[data-lang="en"] :where(h1, h2, h3, p, li, figcaption, dd, small) {
-  word-break: normal;
-  overflow-wrap: normal;
-  hyphens: none;
-}
 
 :where(.evidence-value, .metric-value, .research-node strong, .timeline-year, .patent-number, .project-meta) {
   font-variant-numeric: tabular-nums;
